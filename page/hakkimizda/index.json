@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Akademi",
+    "en": "Academy",
+    "ar": "الأكاديمية"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 0,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "rhenuh",
+      "pbjnsw"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Eğitmenler ve derslikler (kurgusal).",
+    "en": "Teachers and classrooms (fictional).",
+    "ar": "المدرّسون والقاعات (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Akademi",
+    "en": "Academy",
+    "ar": "الأكاديمية"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T22:47:42.784Z",
+  "date": "2026-10-30"
+}

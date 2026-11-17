@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Mızrap Akademi: Gaziantep’te bağlama, klasik gitar, piyano, keman, davul ve şan dersleri. Haftalık programdan seans seçin; ilk deneme dersi ücretsiz, dönem sonunda sahne konseri. Demo site; içerik kurgusaldır.",
+    "en": "Mizrap Academy: baglama, classical guitar, piano, violin, drums and singing lessons in Gaziantep. Pick a session from the weekly timetable; the first trial lesson is free and the term ends with a stage concert. Demo site; content is fictional.",
+    "ar": "أكاديمية مِضراب: دروس البغلمة والغيتار الكلاسيكي والبيانو والكمان والطبول والغناء في غازي عنتاب. اختر حصة من الجدول الأسبوعي؛ الدرس التجريبي الأول مجاني، ويُختتم الفصل بحفلة على المسرح. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "müzik okulu, gitar kursu, piyano dersi, bağlama kursu, keman dersi, şan dersi",
+    "en": "music school, guitar course, piano lessons, baglama course, violin lessons, singing lessons",
+    "ar": "مدرسة موسيقى، دورة غيتار، دروس بيانو، دورة بغلمة، دروس كمان، دروس غناء"
+  },
+  "category": "Kurumsal",
+  "name": "Mızrap Akademi",
+  "domain": "muzik-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "open-sans",
+    "heading": "fraunces",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#3466C8",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "4px",
+    "--mx-radius-md": "6px",
+    "--mx-radius-lg": "8px",
+    "--mx-radius-xl": "11px"
+  },
+  "icon": "icon.png"
+}

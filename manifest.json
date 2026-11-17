@@ -1,0 +1,29 @@
+{
+  "name": "Mızrap Akademi",
+  "short_name": "Mızrap Akade",
+  "description": "Mızrap Akademi: Gaziantep’te bağlama, klasik gitar, piyano, keman, davul ve şan dersleri. Haftalık programdan seans seçin; ilk deneme dersi ücretsiz, dönem sonunda sahne konseri. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3466C8",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

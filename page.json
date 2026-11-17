@@ -1,0 +1,86 @@
+{
+  "data": [
+    {
+      "name": {
+        "tr": "Akademi",
+        "en": "Academy",
+        "ar": "الأكاديمية"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 0,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "rhenuh",
+          "pbjnsw"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Eğitmenler ve derslikler (kurgusal).",
+        "en": "Teachers and classrooms (fictional).",
+        "ar": "المدرّسون والقاعات (افتراضي)."
+      }
+    },
+    {
+      "id": "kb3bxq4lke",
+      "name": {
+        "tr": "Program",
+        "en": "Timetable",
+        "ar": "الجدول"
+      },
+      "description": {
+        "tr": "Haftalık ders programı ve deneme dersi talebi (demo).",
+        "en": "Weekly lesson timetable and trial-lesson request (demo).",
+        "ar": "جدول الدروس الأسبوعي وطلب درس تجريبي (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "calendar_month",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "bzurkn"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 2,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "e4orvl",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}
