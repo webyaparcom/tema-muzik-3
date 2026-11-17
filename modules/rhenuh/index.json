@@ -1,0 +1,56 @@
+{
+  "name": "Ekip Sahne Planı — kuşbakışı sahnede yerleşim + numaralı künye",
+  "description": "Kuşbakışı yarım ay sahne: üyeler sahnedeki yerlerinde numaralı daire portre (5'e kadar tek yay, fazlası ön/arka iki sıra); yanında numaralı künye listesi (ad, unvan, enstrüman/rol simgesi). Noktaya ya da künyeye gelince ikisi birlikte yanar, diğerleri griye döner; tıklama seçimi sabitler. JS yoksa noktalar künyeye çapa. Veri ek alanı: `enstruman` (dil sözlüğü), `ikon` (Material Symbols). Mekânsal yerleşim iskeleti: üyeler ızgara/liste yerine sahne planı üzerinde konumlanır (hesaplanmış yay koordinatları) ve ayrı bir künye ile karşılıklı vurgu kurar; ekip-organizasyon-semasi'nin hiyerarşi ağacından ve ekip-avukat-profil'in liste→detay panelinden farklı olarak ilişki «kim nerede duruyor». Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "mic_external_on",
+  "category": "team",
+  "subCategory": "stage-plot",
+  "tags": [
+    "team",
+    "stage-plot",
+    "spatial",
+    "legend",
+    "music",
+    "interactive",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-text, #111318)",
+    "text": "var(--mx-site-bg, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+    "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+    "accentText": "var(--mx-site-text, #111318)",
+    "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "vurguText": "var(--mx-site-text, #111318)",
+    "seyirciEtiket": "",
+    "bgcolor": "var(--mx-site-text, #111318)",
+    "color": "var(--mx-site-bg, #ffffff)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "ad": "ad soyad (zorunlu; düz metin ya da dil sözlüğü)",
+      "unvan": "görev / unvan (dil sözlüğü)",
+      "metin": "kısa tanıtım (dil sözlüğü)",
+      "img": "portre görseli (yoksa baş harfler)",
+      "bolum": "bölüm (dil sözlüğü ya da desing.departments id'si)",
+      "eposta": "e-posta (mailto)",
+      "telefon": "telefon (tel:)",
+      "url": "profil sayfası bağlantısı",
+      "social": "[{ ad, url (http(s)/mailto/tel), ikon (Material Symbols) }]"
+    }
+  }
+}

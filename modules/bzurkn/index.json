@@ -1,0 +1,53 @@
+{
+  "name": "Randevu Ders Programı — haftalık seans tablosu ve kontenjan çubukları",
+  "description": "Satırlar ders/hizmet, sütunlar açık hafta günleri olan gerçek tablo: her hücrede seans saati ve kontenjan doluluk çubuğu («5 yer»), dolu seans çizili ve seçilemez. Seans seçilince o gün adının ilk açık tarihi tarih alanına, saat gizli alana yazılır; seçim okuması altta. Altta tarih, uzman, ad, telefon, e-posta, not, KVKK ve gönder. Seans listesi (data[].seanslar) yoksa çalışma saatlerinden dama düzeninde seans üretilir. Mobilde tablo yatay kayar, ders sütunu yapışık kalır. randevu-haftalik-cizelge yalnız açık/kapalı gün şeridi, randevu-saat-izgara gün dilimi sütunları gösterir; bu modül hizmet × hafta günü matrisinde tekrarlanan seansları kontenjan doluluğuyla birlikte tablo olarak verir ve hücre seçimini bir sonraki gerçek tarihe çevirir (ders parçası) — sınıf/kurs işletmesine özgü iskelet. Sunucusuz gönderim (formAction JSON POST › WhatsApp › .ics › mailto), kapalı gün denetimi, KVKK onayı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Gönderim yolu yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "table_view",
+  "category": "randevu",
+  "subCategory": "class-timetable",
+  "tags": [
+    "randevu",
+    "timetable",
+    "classes",
+    "capacity",
+    "schedule",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1240px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "kalanAd": "",
+    "doluAd": "",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "ad": "hizmet adı (dil sözlüğü, zorunlu) — eski `services[].name`",
+      "sure": "dakika — eski `duration`",
+      "fiyat": "sayı (sayfa diliyle biçimlenir) — eski `price`",
+      "ikon": "Material Symbols adı",
+      "metin": "kısa açıklama (dil sözlüğü)",
+      "img": "görsel (destekleyen yerleşimde)"
+    }
+  }
+}

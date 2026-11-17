@@ -1,0 +1,104 @@
+<section class="modulex-iletisim-mikser{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-iletisim-mikser-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* iletisim-mikser — Ailede SES MASASI metaforu olan tek modül: conic-gradient düğme halkası + nth-child(5n+…) --dol / --aci değişkenleriyle ibre ve sürgü konumu, transform-origin alttan scaleY ile zıplayan VU çubukları, tarama çizgili ekran; iletisim-interkom'un tek panel nesnesinden farklı olarak her kanal bağımsız bir şerit. */
+  .modulex-iletisim-mikser { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-iletisim-mikser *, .modulex-iletisim-mikser *::before, .modulex-iletisim-mikser *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-iletisim-mikser :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-iletisim-mikser :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-iletisim-mikser :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-iletisim-mikser :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-iletisim-mikser img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-iletisim-mikser) img { height: auto; }
+  .modulex-iletisim-mikser [hidden] { display: none !important; }
+  .modulex-iletisim-mikser :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-iletisim-mikser :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-iletisim-mikser-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-iletisim-mikser-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-iletisim-mikser--bassiz .modulex-iletisim-mikser-bas { display: none; }
+  .modulex-iletisim-mikser-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-iletisim-mikser-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-iletisim-mikser-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-iletisim-mikser-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-iletisim-mikser-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-iletisim-mikser-dugme:hover { transform: translateY(-2px); }
+  .modulex-iletisim-mikser-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-iletisim-mikser-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-iletisim-mikser-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-iletisim-mikser-mk-konsol { display: grid; gap: clamp(20px, 3vw, 30px); padding: clamp(16px, 3vw, 34px); border-radius: calc(--yuvarlak-- + 6px); background: color-mix(in srgb, --text-- 6%, --bg--); box-shadow: inset 0 1px 0 color-mix(in srgb, --text-- 14%, transparent), inset 0 0 0 1px --cizgi--; }
+  .modulex-iletisim-mikser-mk-ekran { display: grid; gap: 10px; padding: 22px 24px; border: 1px solid --cizgi--; border-radius: 12px; background-color: --bg--; background-image: repeating-linear-gradient(to bottom, color-mix(in srgb, --accent-- 7%, transparent) 0 2px, transparent 2px 4px); box-shadow: inset 0 0 24px color-mix(in srgb, --accent-- 16%, transparent); }
+  .modulex-iletisim-mikser-mk-kanallar { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 12px; }
+  .modulex-iletisim-mikser-mk-kanal { --dol: 30%; --aci: -27deg; display: grid; justify-items: center; align-content: start; gap: 10px; min-width: 0; padding-block: 18px 20px; padding-inline: 14px; border: 1px solid --cizgi--; border-radius: 14px; background: --kartBg--; text-align: center; transition: border-color 0.25s ease, transform 0.25s ease; }
+  .modulex-iletisim-mikser-mk-kanal:nth-child(5n+2) { --dol: 55%; --aci: 63deg; }
+  .modulex-iletisim-mikser-mk-kanal:nth-child(5n+3) { --dol: 42%; --aci: 16deg; }
+  .modulex-iletisim-mikser-mk-kanal:nth-child(5n+4) { --dol: 66%; --aci: 103deg; }
+  .modulex-iletisim-mikser-mk-kanal:nth-child(5n) { --dol: 20%; --aci: -63deg; }
+  .modulex-iletisim-mikser-mk-kanal:hover { border-color: --accent--; transform: translateY(-3px); }
+  .modulex-iletisim-mikser-mk-ust { display: flex; align-items: flex-end; justify-content: center; gap: 16px; }
+  .modulex-iletisim-mikser-mk-dugme { position: relative; inline-size: 52px; block-size: 52px; border-radius: 50%; background: conic-gradient(from 225deg, --accent-- 0 var(--dol), color-mix(in srgb, --text-- 18%, transparent) 0 75%, transparent 0); }
+  .modulex-iletisim-mikser-mk-dugme::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, color-mix(in srgb, --text-- 22%, --bg--), --bg-- 70%); box-shadow: 0 3px 6px color-mix(in srgb, --bg-- 70%, transparent); }
+  .modulex-iletisim-mikser-mk-dugme::after { content: ""; position: absolute; inset-block-start: 10px; inset-inline-start: calc(50% - 1.5px); inline-size: 3px; block-size: 14px; border-radius: 2px; background: --accentInk--; transform-origin: 50% 16px; transform: rotate(var(--aci)); transition: transform 0.4s ease; }
+  .modulex-iletisim-mikser-mk-kanal:hover .modulex-iletisim-mikser-mk-dugme::after { transform: rotate(calc(var(--aci) + 40deg)); }
+  .modulex-iletisim-mikser-mk-vu { display: flex; align-items: flex-end; gap: 3px; block-size: 40px; }
+  .modulex-iletisim-mikser-mk-vu span { inline-size: 6px; block-size: 100%; border-radius: 2px; background: linear-gradient(to top, --accent-- 0 60%, color-mix(in srgb, --accent-- 50%, --text--) 60% 85%, --text-- 85%); transform-origin: 50% 100%; animation: modulex-iletisim-mikser-mk-zipla 1.1s ease-in-out infinite alternate; }
+  .modulex-iletisim-mikser-mk-vu span:nth-child(2) { animation-duration: 0.8s; animation-delay: -0.3s; }
+  .modulex-iletisim-mikser-mk-vu span:nth-child(3) { animation-duration: 1.3s; animation-delay: -0.6s; }
+  .modulex-iletisim-mikser-mk-vu span:nth-child(4) { animation-duration: 0.9s; animation-delay: -0.2s; }
+  .modulex-iletisim-mikser-mk-vu span:nth-child(5) { animation-duration: 1.2s; animation-delay: -0.8s; }
+  @keyframes modulex-iletisim-mikser-mk-zipla { from { transform: scaleY(0.2); } to { transform: scaleY(1); } }
+  .modulex-iletisim-mikser-mk-ray { position: relative; inline-size: 100%; max-inline-size: 140px; block-size: 6px; margin-block: 8px 4px; border-radius: 3px; background: color-mix(in srgb, --text-- 16%, transparent); }
+  .modulex-iletisim-mikser-mk-surgu { position: absolute; inset-block-start: -8px; inset-inline-start: calc(var(--dol) - 9px); inline-size: 18px; block-size: 22px; border-radius: 4px; background: linear-gradient(--text--, color-mix(in srgb, --text-- 60%, --bg--)); box-shadow: 0 3px 6px color-mix(in srgb, --bg-- 70%, transparent); transition: inset-inline-start 0.5s ease; }
+  .modulex-iletisim-mikser-mk-kanal:hover .modulex-iletisim-mikser-mk-surgu { inset-inline-start: calc(var(--dol) + 12% - 9px); }
+  .modulex-iletisim-mikser-mk-ik { color: --accentInk--; font-size: 24px; }
+  .modulex-iletisim-mikser-mk-kanal .modulex-iletisim-mikser-deger { font-size: 1.02rem; }
+  @media (max-width: 768px) {
+    .modulex-iletisim-mikser-mk-kanallar { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .modulex-iletisim-mikser-mk-kanal { padding-inline: 10px; }
+    .modulex-iletisim-mikser-mk-ust { gap: 10px; }
+    .modulex-iletisim-mikser-mk-ekran { padding: 18px; }
+  }
+  .modulex-iletisim-mikser-kikon { flex: none; display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 24px; }
+  .modulex-iletisim-mikser-ketiket { display: block; color: --muted--; font-size: 0.82rem; font-weight: 650; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-iletisim-mikser-deger { color: inherit; font-weight: 650; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  a.modulex-iletisim-mikser-deger:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-iletisim-mikser-eylem { display: inline-flex; align-items: center; gap: 6px; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.2s ease; }
+  .modulex-iletisim-mikser-eylem:hover { gap: 10px; }
+  .modulex-iletisim-mikser-eylem .material-symbols-outlined { font-size: 18px; }
+  .modulex-iletisim-mikser-kopya { display: none; align-items: center; gap: 6px; min-height: 36px; padding: 6px 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: --text--; font: inherit; font-size: 0.85rem; font-weight: 650; transition: border-color 0.2s ease, background 0.2s ease; }
+  .modulex-iletisim-mikser--kjs .modulex-iletisim-mikser-kopya { display: inline-flex; }
+  .modulex-iletisim-mikser-kopya:hover { border-color: --accent--; }
+  .modulex-iletisim-mikser-kopya .material-symbols-outlined { font-size: 18px; }
+  .modulex-iletisim-mikser--kopyalandi { background: color-mix(in srgb, --accent-- 14%, transparent); }
+  .modulex-iletisim-mikser-sosyal { display: grid; gap: 10px; }
+  .modulex-iletisim-mikser-sbaslik { color: --muted--; font-size: 0.9rem; font-weight: 650; }
+  .modulex-iletisim-mikser-sliste { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-iletisim-mikser-cip { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 8px 14px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-weight: 650; text-decoration: none; transition: border-color 0.2s ease, transform 0.2s ease; }
+  .modulex-iletisim-mikser-cip:hover { border-color: --accent--; transform: translateY(-2px); }
+  .modulex-iletisim-mikser-cikon { font-size: 18px; }
+  .modulex-iletisim-mikser-harita { position: relative; overflow: hidden; min-height: 280px; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-iletisim-mikser-iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .modulex-iletisim-mikser-hdesen { position: absolute; inset: 0; display: grid; place-items: center; background-color: color-mix(in srgb, --accent-- 8%, --kartBg--); background-image: linear-gradient(color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), radial-gradient(circle at 30% 40%, color-mix(in srgb, --accent-- 18%, transparent) 0 18%, transparent 19%); background-size: 36px 36px, 36px 36px, 100% 100%; }
+  .modulex-iletisim-mikser-pin { color: --accentInk--; font-size: 56px; animation: modulex-iletisim-mikser-zipla 2.4s ease-in-out infinite; }
+  @keyframes modulex-iletisim-mikser-zipla { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  .modulex-iletisim-mikser-hyol { position: absolute; inset-block-end: 16px; inset-inline-start: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: --bg--; color: --text--; font-weight: 700; text-decoration: none; box-shadow: 0 6px 20px color-mix(in srgb, --text-- 16%, transparent); transition: transform 0.2s ease; }
+  .modulex-iletisim-mikser-hyol:hover { transform: translateY(-2px); }
+  .modulex-iletisim-mikser-hyol .material-symbols-outlined { font-size: 18px; color: --accentInk--; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-iletisim-mikser :is(.modulex-iletisim-mikser-baslik, .modulex-iletisim-mikser-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-iletisim-mikser-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-iletisim-mikser { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-iletisim-mikser *, .modulex-iletisim-mikser *::before, .modulex-iletisim-mikser *::after { animation: none !important; transition: none !important; }
+  }
+</style>

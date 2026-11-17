@@ -1,0 +1,57 @@
+{
+  "name": "İletişim Mikser — ses masası kanal şeritleri: düğme, VU ışıkları, sürgü + kanal bilgisi",
+  "description": "Koyu zeminde bir ses masası: üstte tarama çizgili ekran panelinde üst etiket, başlık ve metin; altında her kanal bir mikser şeridi: açısı sıraya göre değişen döner düğme (conic-gradient dolgu + ibre), zıplayan beş çubuklu VU ışığı, yatay sürgü (üzerine gelince kayar), ikon, etiket, değer ve eylem. Şeritler otomatik ızgarada, dar ekranda iki sütun. Ailede SES MASASI metaforu olan tek modül: conic-gradient düğme halkası + nth-child(5n+…) --dol / --aci değişkenleriyle ibre ve sürgü konumu, transform-origin alttan scaleY ile zıplayan VU çubukları, tarama çizgili ekran; iletisim-interkom'un tek panel nesnesinden farklı olarak her kanal bağımsız bir şerit. Kanallar desing'den (adres · telefon · WhatsApp · e-posta · saat) + data satırları; etiketler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Kanal yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "tune",
+  "category": "contact",
+  "subCategory": "mixing-console",
+  "tags": [
+    "contact",
+    "mixer",
+    "music",
+    "vu-meter",
+    "object",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "adres": "",
+    "telefon": "",
+    "eposta": "",
+    "whatsapp": "",
+    "saat": "",
+    "haritaUrl": "",
+    "haritaGomme": "",
+    "waMesaj": "",
+    "bg": "var(--mx-site-text, #111318)",
+    "text": "var(--mx-site-bg, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+    "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+    "accentText": "var(--mx-site-text, #111318)",
+    "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "vurguText": "var(--mx-site-text, #111318)",
+    "bgcolor": "var(--mx-site-text, #111318)",
+    "color": "var(--mx-site-bg, #ffffff)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "ikon": "Material Symbols adı (kanal türü ikondan da anlaşılır: mail · call · location_on · schedule)",
+      "deger": "dil sözlüğü (görünen değer, zorunlu; eski `text`)",
+      "url": "bağlantı (boşsa e-posta/telefon/haritadan türetilir)",
+      "baslik": "dil sözlüğü (kanal etiketi)"
+    }
+  }
+}

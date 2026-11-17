@@ -1,0 +1,102 @@
+<footer class="modulex-alt-sahne-perde{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-alt-sahne-perde-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</footer>
+
+<style>
+  /* alt-sahne-perde — Kapanış bir gösteri anı: marka perde arasında sahneye çıkar (perde, saçak, spot tamamen CSS; süs olduğu için ekran okuyucudan gizli, reduced-motion'da perde açık durur) — dans okulu, konser, düğün salonu, tiyatro gibi sahne işleri için. */
+  .modulex-alt-sahne-perde { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-alt-sahne-perde *, .modulex-alt-sahne-perde *::before, .modulex-alt-sahne-perde *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-alt-sahne-perde :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-alt-sahne-perde :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-alt-sahne-perde :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-alt-sahne-perde :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-alt-sahne-perde img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-alt-sahne-perde) img { height: auto; }
+  .modulex-alt-sahne-perde [hidden] { display: none !important; }
+  .modulex-alt-sahne-perde :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-alt-sahne-perde :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-alt-sahne-perde-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-alt-sahne-perde-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-alt-sahne-perde--bassiz .modulex-alt-sahne-perde-bas { display: none; }
+  .modulex-alt-sahne-perde-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-alt-sahne-perde-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-alt-sahne-perde-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-alt-sahne-perde-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-alt-sahne-perde-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-alt-sahne-perde-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-sahne-perde-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-alt-sahne-perde-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-alt-sahne-perde-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-alt-sahne-perde-bag { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-alt-sahne-perde-bag:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-alt-sahne-perde-bag[aria-current="page"] { color: --accentInk--; font-weight: 700; }
+  .modulex-alt-sahne-perde-logo { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .modulex-alt-sahne-perde-logo img { width: auto; max-height: --logoH--; }
+  .modulex-alt-sahne-perde-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-alt-sahne-perde-bbaslik { margin-block-end: 14px; color: --accentInk--; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-alt-sahne-perde-sayfalar, .modulex-alt-sahne-perde-baglantilar, .modulex-alt-sahne-perde-iletisim, .modulex-alt-sahne-perde-yasal { display: grid; gap: 9px; }
+  .modulex-alt-sahne-perde-il { display: flex; align-items: flex-start; gap: 10px; }
+  .modulex-alt-sahne-perde-il-ic { display: grid; gap: 2px; }
+  .modulex-alt-sahne-perde-il-etiket { color: --muted--; font-size: 0.8rem; }
+  .modulex-alt-sahne-perde-il-ikon { flex: none; color: --accentInk--; font-size: 20px; }
+  .modulex-alt-sahne-perde-saatler { display: grid; gap: 6px; }
+  .modulex-alt-sahne-perde-saat { display: flex; justify-content: space-between; gap: 16px; }
+  .modulex-alt-sahne-perde-saat dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .modulex-alt-sahne-perde-sosyal { display: flex; flex-wrap: wrap; gap: 10px; }
+  .modulex-alt-sahne-perde-sosyal-a { display: inline-grid; place-items: center; width: 42px; height: 42px; border: 1px solid --cizgi--; border-radius: 50%; color: inherit; font-size: 18px; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
+  .modulex-alt-sahne-perde-sosyal-a:hover { border-color: --accent--; background: --accent--; color: --accentText--; transform: translateY(-2px); }
+  .modulex-alt-sahne-perde-hakkinda { max-width: 46ch; color: --muted--; }
+  .modulex-alt-sahne-perde-telif { display: flex; flex-wrap: wrap; gap: 4px 14px; color: --muted--; font-size: 0.9rem; }
+  .modulex-alt-sahne-perde-dil:empty { display: none; }
+  .modulex-alt-sahne-perde-yukari { display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 50%; background: --accent--; color: --accentText--; text-decoration: none; transition: transform 0.25s ease; }
+  .modulex-alt-sahne-perde-yukari:hover { transform: translateY(-3px); }
+  .modulex-alt-sahne-perde-bulten { display: grid; gap: 8px; }
+  .modulex-alt-sahne-perde-nl-etiket { font-size: 0.9rem; font-weight: 700; }
+  .modulex-alt-sahne-perde-nl-satir { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-alt-sahne-perde-nl-girdi { flex: 1 1 200px; min-width: 0; min-height: 48px; padding: 10px 18px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; color: --text--; font: inherit; }
+  .modulex-alt-sahne-perde-nl-dugme { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 10px 22px; border: 0; border-radius: 999px; background: --accent--; color: --accentText--; font: inherit; font-weight: 700; transition: transform 0.2s ease; }
+  .modulex-alt-sahne-perde-nl-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-sahne-perde-nl-dugme .material-symbols-outlined { font-size: 18px; }
+  .modulex-alt-sahne-perde-nl-durum:empty { display: none; }
+  .modulex-alt-sahne-perde-nl-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .modulex-alt-sahne-perde-nl-metin { color: --muted--; }
+
+  .modulex-alt-sahne-perde-sp-sahne { position: relative; display: grid; place-items: center; min-height: clamp(300px, 32vw, 420px); padding: 76px clamp(64px, 16%, 210px) 44px; overflow: hidden; border-start-start-radius: --yuvarlak--; border-start-end-radius: --yuvarlak--; background: radial-gradient(ellipse 55% 75% at 50% 0, color-mix(in srgb, --accent-- 28%, transparent), transparent 72%), --kartBg--; }
+  .modulex-alt-sahne-perde-sp-perde { position: absolute; inset-block: 0; width: clamp(48px, 14%, 180px); background: repeating-linear-gradient(90deg, color-mix(in srgb, --accent-- 62%, --bg--) 0 12px, color-mix(in srgb, --accent-- 38%, --bg--) 12px 20px, color-mix(in srgb, --accent-- 62%, --bg--) 20px 28px); box-shadow: inset 0 -60px 50px -30px color-mix(in srgb, --bg-- 60%, transparent); transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); animation: modulex-alt-sahne-perde-sp-ac 1.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; }
+  .modulex-alt-sahne-perde-sp-perde--bas { inset-inline-start: 0; border-end-end-radius: 70% 24%; }
+  .modulex-alt-sahne-perde-sp-perde--son { inset-inline-end: 0; border-end-start-radius: 70% 24%; }
+  .modulex-alt-sahne-perde-sp-sahne:hover .modulex-alt-sahne-perde-sp-perde { width: clamp(32px, 9%, 120px); }
+  @keyframes modulex-alt-sahne-perde-sp-ac { from { width: 50%; } }
+  .modulex-alt-sahne-perde-sp-sacak { position: absolute; inset-block-start: 0; inset-inline: 0; height: 46px; background: --vurguBg--; -webkit-mask: radial-gradient(24px 18px at 50% 100%, transparent 98%, black) 0 0 / 48px 100% repeat-x; mask: radial-gradient(24px 18px at 50% 100%, transparent 98%, black) 0 0 / 48px 100% repeat-x; }
+  .modulex-alt-sahne-perde-sp-merkez { position: relative; z-index: 1; display: grid; justify-items: center; gap: 18px; max-width: 640px; text-align: center; }
+  .modulex-alt-sahne-perde-sp-merkez::before { content: ""; position: absolute; z-index: -1; inset: -24% -18%; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in srgb, --text-- 9%, transparent), transparent); animation: modulex-alt-sahne-perde-sp-isik 6s ease-in-out infinite alternate; }
+  @keyframes modulex-alt-sahne-perde-sp-isik { to { opacity: 0.5; transform: scale(1.08); } }
+  .modulex-alt-sahne-perde-sp-soz { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+  .modulex-alt-sahne-perde-sp-merkez .modulex-alt-sahne-perde-sosyal { justify-content: center; }
+  .modulex-alt-sahne-perde-sp-zemin { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 28px; padding: 32px clamp(20px, 3vw, 36px) 36px; border-block-start: 6px solid --accent--; border-end-start-radius: --yuvarlak--; border-end-end-radius: --yuvarlak--; background: linear-gradient(to bottom, color-mix(in srgb, --accent-- 12%, transparent), transparent 85%); }
+  .modulex-alt-sahne-perde-blok--sp { display: grid; align-content: start; transition: transform 0.3s ease; }
+  .modulex-alt-sahne-perde-blok--sp:hover { transform: translateY(-4px); }
+  .modulex-alt-sahne-perde-sp-dip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 26px; margin-block-start: 28px; text-align: center; }
+  .modulex-alt-sahne-perde-sp-yasal { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; font-size: 0.9rem; }
+  @media (max-width: 768px) {
+    .modulex-alt-sahne-perde-sp-sahne { padding-inline: 46px; }
+    .modulex-alt-sahne-perde-sp-perde { width: 30px; }
+    .modulex-alt-sahne-perde-sp-sahne:hover .modulex-alt-sahne-perde-sp-perde { width: 22px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-sahne-perde :is(.modulex-alt-sahne-perde-baslik, .modulex-alt-sahne-perde-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-sahne-perde-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-alt-sahne-perde { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-alt-sahne-perde *, .modulex-alt-sahne-perde *::before, .modulex-alt-sahne-perde *::after { animation: none !important; transition: none !important; }
+  }
+</style>

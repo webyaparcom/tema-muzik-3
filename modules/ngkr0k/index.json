@@ -1,0 +1,52 @@
+{
+  "name": "Üst Kitap Sırtı — rafta dizili kitap sırtı menü",
+  "description": "Üstte logo, e-posta, dil ve düğme; altında kalın bir raf çizgisinin üstünde sayfalar dik duran kitap sırtları: dikey yazılı, farklı boy, en ve tonlarda, üstte ve altta sırt bantlı. Üzerine gelince kitap raftan yukarı çekilir; etkin sayfa vurgu renkli, çekili kitap. Dar ekranda kitaplar kısalır, raf yine açık; JS gerekmez. Menü yatay yazı satırı değil, dikey yazılı kitap sırtlarından bir raf (writing-mode): kütüphane/arşiv metaforu, her sayfa bir cilt — dar ekranda da hamburgersiz. Sayfalar site sayfalarından, dil seçici {{langbar}}, logo {{logo}}. Mobil menü erişilebilir (aria-expanded, Esc, odak). Renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+  "version": "1.0.0",
+  "icon": "shelves",
+  "category": "menu",
+  "subCategory": "book-spines",
+  "tags": [
+    "menu",
+    "book-spines",
+    "vertical-text",
+    "shelf",
+    "no-hamburger",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "0px",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "tel": "",
+    "logoimg": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "logoH": "44px",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "name": "ek bağlantı adı (dil sözlüğü)",
+      "url": "iç yol ya da dış adres (dış adres yeni sekmede)"
+    }
+  }
+}
