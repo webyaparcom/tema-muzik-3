@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Her yaştan öğrenciye enstrümanı, küçük gruplarda ve sahneye çıkma hedefiyle öğretmek.</p>",
     "en": "<h2>Our mission</h2>\n<p>To teach students of all ages an instrument in small groups, with the stage as the goal.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>أن نعلّم الطلاب من كل الأعمار العزف في مجموعات صغيرة وهدفهم الصعود إلى المسرح.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>أن نعلّم الطلاب من كل الأعمار العزف في مجموعات صغيرة وهدفهم الصعود إلى المسرح.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Schüler jeden Alters in kleinen Gruppen ein Instrument zu lehren, mit dem Ziel, auf der Bühne zu stehen.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Учить студентов любого возраста игре на инструменте в малых группах, с целью выступления на сцене.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T22:44:34.448Z",
   "update": "2026-11-16T22:47:42.809Z",

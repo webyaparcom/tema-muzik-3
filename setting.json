@@ -4,12 +4,16 @@
   "description": {
     "tr": "Mızrap Akademi: Gaziantep’te bağlama, klasik gitar, piyano, keman, davul ve şan dersleri. Haftalık programdan seans seçin; ilk deneme dersi ücretsiz, dönem sonunda sahne konseri. Demo site; içerik kurgusaldır.",
     "en": "Mizrap Academy: baglama, classical guitar, piano, violin, drums and singing lessons in Gaziantep. Pick a session from the weekly timetable; the first trial lesson is free and the term ends with a stage concert. Demo site; content is fictional.",
-    "ar": "أكاديمية مِضراب: دروس البغلمة والغيتار الكلاسيكي والبيانو والكمان والطبول والغناء في غازي عنتاب. اختر حصة من الجدول الأسبوعي؛ الدرس التجريبي الأول مجاني، ويُختتم الفصل بحفلة على المسرح. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "أكاديمية مِضراب: دروس البغلمة والغيتار الكلاسيكي والبيانو والكمان والطبول والغناء في غازي عنتاب. اختر حصة من الجدول الأسبوعي؛ الدرس التجريبي الأول مجاني، ويُختتم الفصل بحفلة على المسرح. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Mızrap Akademie: Bağlama, klassische Gitarre, Klavier, Violine, Trommeln und Gesangsunterricht in Gaziantep. Wählen Sie eine Sitzung aus dem wöchentlichen Programm; die erste Probestunde ist kostenlos, das Semester endet mit einem Bühnenkonzert. Demo-Seite; Inhalt ist fiktiv.",
+    "ru": "Академия Мызрап: уроки багламы, классической гитары, фортепиано, скрипки, барабанов и вокала в Газиантепе. Выберите занятие из недельного расписания; первый пробный урок бесплатный, семестр заканчивается концертом на сцене. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "müzik okulu, gitar kursu, piyano dersi, bağlama kursu, keman dersi, şan dersi",
     "en": "music school, guitar course, piano lessons, baglama course, violin lessons, singing lessons",
-    "ar": "مدرسة موسيقى، دورة غيتار، دروس بيانو، دورة بغلمة، دروس كمان، دروس غناء"
+    "ar": "مدرسة موسيقى، دورة غيتار، دروس بيانو، دورة بغلمة، دروس كمان، دروس غناء",
+    "de": "Musikschule, Gitarrenkurs, Klavierunterricht, Bağlama-Kurs, Geigenunterricht, Gesangsunterricht",
+    "ru": "музыкальная школа, курсы гитары, уроки фортепиано, курсы баглама, уроки скрипки, уроки вокала"
   },
   "category": "Kurumsal",
   "name": "Mızrap Akademi",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

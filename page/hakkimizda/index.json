@@ -2,7 +2,9 @@
   "name": {
     "tr": "Akademi",
     "en": "Academy",
-    "ar": "الأكاديمية"
+    "ar": "الأكاديمية",
+    "de": "Akademie",
+    "ru": "Академия"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Eğitmenler ve derslikler (kurgusal).",
     "en": "Teachers and classrooms (fictional).",
-    "ar": "المدرّسون والقاعات (افتراضي)."
+    "ar": "المدرّسون والقاعات (افتراضي).",
+    "de": "Lehrkräfte und Klassenräume (fiktiv).",
+    "ru": "Преподаватели и классы (вымышленно)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Akademi",
     "en": "Academy",
-    "ar": "الأكاديمية"
+    "ar": "الأكاديمية",
+    "de": "Akademie",
+    "ru": "Академия"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T22:47:42.784Z",
