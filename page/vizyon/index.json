@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Mahallenin her evinden bir enstrüman sesinin yükseldiği bir okul olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be a school that makes an instrument heard from every home in the neighbourhood.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مدرسة يُسمع بفضلها صوت آلة موسيقية من كل بيت في الحي.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مدرسة يُسمع بفضلها صوت آلة موسيقية من كل بيت في الحي.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Die Schule zu sein, aus der in jedem Haus des Viertels der Klang eines Instruments erklingt.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Стать школой, из каждого дома в которой слышен звук музыкального инструмента.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T22:44:34.448Z",
   "update": "2026-11-16T22:47:42.813Z",

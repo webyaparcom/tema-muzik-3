@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>En çok 6 kişilik gruplar, her dönem veli/öğrenci geri bildirimi ve dönem sonu konseri.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>Groups of at most 6, feedback from students and parents every term and an end-of-term concert.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>مجموعات لا تتجاوز 6 أشخاص، وملاحظات من الطلاب وأولياء الأمور كل فصل، وحفلة في نهاية الفصل.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>مجموعات لا تتجاوز 6 أشخاص، وملاحظات من الطلاب وأولياء الأمور كل فصل، وحفلة في نهاية الفصل.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Gruppen mit max. 6 Personen, Feedback von Eltern/Schülern jedes Semester und Semesterabschlusskonzert.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Группы не более 6 человек, обратная связь от родителей/учеников каждый семестр и концерт в конце семестра.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T22:44:34.448Z",
   "update": "2026-11-16T22:47:42.816Z",

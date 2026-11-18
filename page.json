@@ -4,7 +4,9 @@
       "name": {
         "tr": "Akademi",
         "en": "Academy",
-        "ar": "الأكاديمية"
+        "ar": "الأكاديمية",
+        "de": "Akademie",
+        "ru": "Академия"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -25,7 +27,9 @@
       "description": {
         "tr": "Eğitmenler ve derslikler (kurgusal).",
         "en": "Teachers and classrooms (fictional).",
-        "ar": "المدرّسون والقاعات (افتراضي)."
+        "ar": "المدرّسون والقاعات (افتراضي).",
+        "de": "Lehrkräfte und Klassenräume (fiktiv).",
+        "ru": "Преподаватели и классы (вымышленно)."
       }
     },
     {
@@ -33,12 +37,16 @@
       "name": {
         "tr": "Program",
         "en": "Timetable",
-        "ar": "الجدول"
+        "ar": "الجدول",
+        "de": "Programm",
+        "ru": "Расписание"
       },
       "description": {
         "tr": "Haftalık ders programı ve deneme dersi talebi (demo).",
         "en": "Weekly lesson timetable and trial-lesson request (demo).",
-        "ar": "جدول الدروس الأسبوعي وطلب درس تجريبي (تجريبي)."
+        "ar": "جدول الدروس الأسبوعي وطلب درس تجريبي (تجريبي).",
+        "de": "Wöchentlicher Stundenplan und Anfrage für eine Probestunde (Demo).",
+        "ru": "Недельное расписание и заявка на пробное занятие (демо)."
       },
       "path": "teklif-al",
       "icon": "calendar_month",
@@ -57,7 +65,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -78,7 +88,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],
